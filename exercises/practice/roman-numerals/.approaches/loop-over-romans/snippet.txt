@@ -1,0 +1,7 @@
+def roman(number):
+    roman_num = ''
+    for arabic, roman in ROMANS:
+        while arabic <= number:
+            roman_num += roman
+            number -= arabic
+    return roman_num
